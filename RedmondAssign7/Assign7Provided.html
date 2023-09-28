@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    -->
+<!--This is an HTML comment. -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Assignment 7</title>
+    
+    
+    <style>
+        body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #228833; 
+    color : white;
+        }
+
+    #heading 
+    {
+    	margin-left: 120px;
+    }
+
+#middle {
+    width: 1300px;   /* was 460 */
+    margin: 5px auto;
+    padding: 5px 20px;
+    background: #66AA33;  /* was white #22FF88 */
+    border: thick solid black; /* was thin solid black */
+    float: left
+    } 
+
+    #controls 
+    {
+    width: 1200px;   
+    	float: left;
+    	margin: 3em;
+        background:  #00CC33 ;
+    border: thin solid black; /* was thin solid black */
+    }
+#controls label {
+    display: block;  /* makes labels in the #controls section into block elements (p209) */
+    width: 8em;
+    text-align: left;  
+    padding-right: 1em;
+    color: black;
+    float: left; }  
+#controls input {
+    display: block;  /* makes labels in the #controls section into block elements (p209) */
+    width: 15em;
+    float: left; }
+#controls br {
+    clear: left; }  /* will not fill in besides left floated elements (such as labels and inputs) */
+
+
+fieldset #container {
+    
+    width: 1200px;   /* was 460 */
+    margin: 5px auto;
+    padding: 5px 20px;
+}
+
+
+
+#buttonarea
+        {
+        	clear: both;
+        	float:left; 
+             /* margin-left: 120px; */
+        }
+
+
+#buttonarea input
+        {
+        	clear: both;
+    width: 10em;
+        	float:left; 
+             /* margin-left: 120px; */
+        }
+        #display 
+        {
+        	/* float: right; */
+        	clear: none;
+    	margin: 3em;
+        }
+
+        
+#outputs input {
+    color: red; }   /* was black */
+
+                    #blocks img {
+                        border:3px solid black;
+                    }
+
+                   
+
+
+
+
+
+
+
+    </style>
+    <script type="text/javascript" src="question5.js"></script> 
+    <script>
+        "use strict";
+
+
+        ///////////////////////////////////////////////
+        // Provided - Students - USE this (call it), DO NOT change it!!!!!!!
+        ///////////////////////////////////////////////
+
+        /// generate a random number between min and max
+        function GenerateNumber(min, max) {
+            let myTarget;
+            myTarget = Math.floor(Math.random() * ((max + 1) - min)) + min;
+            return myTarget;
+        }
+
+         
+        
+
+        
+
+
+
+    </script>
+
+
+</head>
+<body>
+    <section id="heading">
+    <h1>Picture Competition - Assignment 7 - By Dr Redmond and ...</h1>
+    </section>
+
+
+    <p>Click on button to bring playing cards in randomly below</p>
+
+    <section id="middle">
+        <section id="controls">
+            <fieldset id="container"> 
+        
+                <section id="inputs"> 
+                    </section>
+    <section id="buttonarea">
+        <input id="btnGo" type="button" value="Go" onclick="return btnGo_onclick()" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+        <input id="btnReset" type="button" value="Reset" onclick="return btnReset_onclick()" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+        <br />
+    </section>
+                <br />
+                <br />
+                <section id="outputs"> 
+            <label >"Team" </label> 
+            <label >Points </label><br />
+            <label for="txtEagles">Eagles: </label>
+            <input type="text" id="txtEagles" disabled="disabled" value="0" /><br />
+            <label for="txtParks">Parks: </label>
+            <input type="text" id="txtParks" disabled="disabled" value="0" /><br />
+            <label for="txtIdols">Idols: </label>
+            <input type="text" id="txtIdols" disabled="disabled" value="0" /><br />
+            <label for="txtActors">Actors: </label>
+            <input type="text" id="txtActors" disabled="disabled" value="0" /><br />
+            <label for="txtAliens">Aliens: </label>
+            <input type="text" id="txtAliens" disabled="disabled" value="0" /><br />
+
+                    
+                    </section>
+
+                 <section id="blocks">
+            <br />
+            <img id="img1" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img2" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img3" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img4" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img5" alt="" src="grayblank.jpg" height="100" width="100"  />
+             
+
+            <img id="img6" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img7" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img8" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img9" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img10" alt="" src="grayblank.jpg" height="100" width="100"  />
+            
+            <br />
+
+            <img id="img11" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img12" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img13" alt="" src="grayblank.jpg" style="border:3px solid red" height="100" width="100"  />
+            <img id="img14" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img15" alt="" src="grayblank.jpg" height="100" width="100"  />
+             
+
+            <img id="img16" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img17" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img18" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img19" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img20" alt="" src="grayblank.jpg" height="100" width="100"  />
+            
+            <br />
+
+            <img id="img21" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img22" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img23" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img24" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img25" alt="" src="grayblank.jpg" height="100" width="100"  />
+             
+
+            <img id="img26" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img27" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img28" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img29" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img30" alt="" src="grayblank.jpg" height="100" width="100"  />
+            
+            <br />
+
+            <img id="img31" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img32" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img33" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img34" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img35" alt="" src="grayblank.jpg" height="100" width="100"  />
+             
+
+            <img id="img36" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img37" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img38" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img39" alt="" src="grayblank.jpg" height="100" width="100"  />
+            <img id="img40" alt="" src="grayblank.jpg" height="100" width="100"  />
+            
+            <br />
+
+
+            </section>
+
+            <legend>Images</legend>
+            </fieldset>
+        </section>
+    </section>
+    <br />
+           
+            
+            <br />
+        <label>&nbsp;</label>
+        <br />
+        <label>&nbsp;</label>
+         
+
+        <br />
+       
+ 
+        <br />
+        &nbsp;<label>&nbsp</label>
+</body>
+</html>
